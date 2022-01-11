@@ -1,5 +1,5 @@
 # firebase
-Exploiting vulnerable/misconfigured [Firebase](https://firebase.google.com/) databases
+Exploiting vulnerable/misconfigured [Firebase](https://firebase.google.com/) databases. This is originally forked from @Turr0n
 
 ## Disclaimer: The provided software is meant for educational purposes only. Use this at your own discretion, the creator cannot be held responsible for any damages caused. Please, use responsibly!
 
@@ -56,6 +56,7 @@ microsoft
 
 Using that file will check for these DBs: ```https://airbnb.firebaseio.com/.json, https://twitter.firebaseio.com/.json, https://microsoft.firebaseio.com/.json```
 
+Firebase-list.py will test by your own input of firebaseio URLs. 'python3 firebase-list.py urls.txt'
 ### Credits
 
 This script is heavily based on the work by the Mobile Threat Team from [appthority](https://www.appthority.com/mobile-threat-center/blog/appthority-discovers-thousands-of-apps-with-firebase-vulnerability-exposing-sensitive-data/). All credits for the reasearch belong to them.
