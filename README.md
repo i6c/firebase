@@ -20,6 +20,7 @@ pip install -r requirements.txt
 ### Usage
 ```
 python3 firebase.py [-h] [--dnsdumpster] [-d /path/to/file.htm] [-o results.json] [-l /path/to/file] [-c 100] [-p 4]
+python3 firebase-list.py urls.txt [-h] [--dnsdumpster] [-d /path/to/file.htm] [-o results.json] [-l /path/to/file] [-c 100] [-p 4]
 ```
 Arguments:
 ```
@@ -56,7 +57,7 @@ microsoft
 
 Using that file will check for these DBs: ```https://airbnb.firebaseio.com/.json, https://twitter.firebaseio.com/.json, https://microsoft.firebaseio.com/.json```
 
-Firebase-list.py will test by your own input of firebaseio URLs. 'python3 firebase-list.py urls.txt'
+Firebase-list.py will test by your own input of firebaseio URLs.
 ### Credits
 
 This script is heavily based on the work by the Mobile Threat Team from [appthority](https://www.appthority.com/mobile-threat-center/blog/appthority-discovers-thousands-of-apps-with-firebase-vulnerability-exposing-sensitive-data/). All credits for the reasearch belong to them.
