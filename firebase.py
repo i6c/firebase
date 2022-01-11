@@ -175,10 +175,14 @@ if __name__ == '__main__':
         json.dump(loot, f)
 
     l = {'1':0, '0':0, '-1':0, '-2':0}
+    Vulnerable = []
     for result in loot:
-        l[str(result['status'])] += 1
+        l[str(result['status'])] +=1
+        if str(result['status']) == '1':
+          Vulnerable.append(result['url'])
 
     print('404 DBs:                 {}'.format(l['-2']))
     print('Secure DBs:              {}'.format(l['-1']))
     print('Possible vulnerable DBs: {}'.format(l['0']))
     print('Vulnerable DBs:          {}'.format(l['1']))
+    print(Vulnerable)
